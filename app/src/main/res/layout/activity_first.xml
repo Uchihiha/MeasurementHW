@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:text="Sheath Measurement Form"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Inspection Date"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/site"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Inspection Site"
+
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Inspector Name"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Phone"
+            android:padding="10dp" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="E-Mail"
+            android:padding="10dp" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:id="@+id/notes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Notes"
+            android:padding="10dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:text="Inspection Type:"
+            />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup"
+            android:layout_marginBottom="10dp">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_one"
+                android:text="Single Sheave"
+                android:onClick="checkButton"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_two"
+                android:text="Sheave Block"
+                android:onClick="checkButton"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radio_three"
+                android:text="Wire Rope"
+                android:onClick="checkButton"/>
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/blockModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Block Model"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/serialNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Serial Number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/noofsheaves"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="No. of Sheaves:"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/diam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Outside Sheave Diameter:"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/ropeSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Nominal Rope Size:"
+            android:padding="10dp" />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:gravity="top|left"
+            android:scrollbars="vertical"
+            android:id="@+id/finalNotes"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Notes"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:text="Submit" />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background"
+            android:text="View All Inspections" />
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="129dp"
+            android:layout_marginEnd="132dp"
+            android:layout_marginBottom="45dp"
+            android:background="@drawable/button_background"
+            android:text="Home" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
